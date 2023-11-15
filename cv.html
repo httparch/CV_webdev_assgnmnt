@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Curriculum Vitae</title>
+    <style>
+    *{
+        font-family:'Avenir', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        text-align: justify;
+        box-sizing: border-box;
+    }
+    body{
+        background: #ededed;
+    }
+
+    p{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        font-style:normal;
+        font-family: math;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        
+    }  
+    /*HEADER & FOOTER*/
+    header, footer{
+        width: 100%;
+        padding: 20px 0px;
+        background-color: #383636;
+        box-shadow: 0px 0px 15px #333;
+    }
+    header{
+        border-bottom: 2px solid #525050;
+        height: 120px;
+    }
+    header h1{
+        color: white;
+        font-size: 1.5em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* footer{
+        border-top: 2px solid #fff;
+    } */
+    footer p{
+        color: #727272;
+        text-align: center;
+    }
+    footer a{
+        color: #c1c1c1;
+    }  
+
+    /*SECTIONS*/
+
+    section {
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 80%;
+        padding-bottom: 20px;
+        margin: 20px auto;
+        box-shadow: 0px 0px 10px #bbb;
+        background-color: #fff;
+    }
+    section h2{
+        margin: 40px 0;
+        width: 90%;
+        border-bottom: 1px solid rgb(121, 119, 119);
+    }
+    section > div{
+        width: 90%;
+    }
+    /*SECTIONS INFO*/
+
+    .photo img{
+        width: 200px;
+        height: 200px;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 10px #777;
+        border-radius: 50%;
+        margin-top: -80px;
+        object-fit: cover;
+    } 
+
+    .aboutMe{
+        border-bottom: 2px dashed #ccc;
+    }
+    .aboutMe a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 10px auto 30px auto;
+        color: #fff;
+        background-color: #EA0;
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 5px;
+    }
+    .contact-content{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .contact-content p:first-child{
+        flex: 0 0 40%;
+    }
+    .contact-content p:last-child{
+        flex: 0 0 60%;
+    }
+    .social{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .social img{
+        width: 50px;
+        height: 50px;
+    }
+
+    /*SECTION TECH*/
+    .info{
+        display: flex;
+        flex-flow: row wrap;
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tech-info {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 0 0 70%;
+        margin-left: auto;
+    }
+
+    .info h3{
+        font-size:  1.5em;
+    }
+    .info h4{
+        font-size:  1.3em;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    /*INTEREST SECTION*/
+    .interest{
+        flex: 0 1 50%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .interest img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px #555;
+    }
+
+    /*CHANGES*/ 
+
+    header h1{
+        width: 80%;
+    }
+
+    .aboutMe, .contacts{
+        flex: 0 0 45%;
+    }
+
+    .aboutMe {
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+
+    .contacts { 
+        padding-left: 20px;
+        margin-right: auto;
+    }
+
+    .aboutMe a {
+        border: 2px solid transparent;
+    }
+    
+    .tech-info, .info-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+
+    .interest{
+        flex: 0 1 25%;
+    }
+
+    div #tech{
+        margin-left: 23%;
+    }
+
+    .row{
+        width: 100%;
+        display: block;
+    }
+
+    .info-sm{
+        display: inline-block;
+        /* flex-flow: row wrap; */
+        /* border-bottom: 1px solid #bbb; */
+        margin-left: 120px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 25%;
+    }
+
+    div #fill{
+        font-weight: 600;
+    }
+    .info-desc p{
+        font-size: larger;
+        font-style: oblique;
+    }
+
+    .aboutMe h2{
+        font-size: -webkit-xxx-large;
+    }
+
+    .tech-info h5{
+        font-size: large;
+        font-style: oblique;
+    }
+    /*FONTS*/
+</style>
+</head>
+
+<body>
+    <header>
+       
+    </header> 
+    <!-- info about me -->
+    <section>
+       <div class="photo">
+            <img src="school/picx.png" alt="">
+       </div>
+        <div class="aboutMe" >
+            <h2 >Hello! I'm Archer</h2>
+            <p>"Motivated self-starter who's excited to tackle new challenges and always eager to learn and grow.
+                 I see each day as a chance to gain more knowledge and improve myself, especially when it comes to technology."
+                </p>
+        </div>
+
+        <div class="contacts">
+            <h2>My Information</h2>
+            <div class="contact-content">
+                <p id="fill">Name:</p>
+                <p>Archer Shane D. Bigornia</p>
+            </div>
+            <div class="contact-content">
+                <p id="fill">Address:</p>
+                <p>Group#1 Upper Molave Street Payatas B. Quezon City</p>
+            </div>
+            <div class="contact-content">
+                <p id="fill">Telephone:</p>
+                <p>09162772331</p>
+            </div>
+            <div class="contact-content">
+                <p id="fill">Mail:</p>
+                <p>Bigorniarcher679@gmail.com</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/Potchiatgrey" ><img src="socials/arch-fb.png" alt=""></a>
+                <a href="" ><img src="socials/arch-tw.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/archer-shane-bigornia-a40b75291/" ><img src="socials/arch-lk.png" alt=""></a>
+                <a href="https://github.com/httparch"><img src="socials/arch-gh-removebg-preview.png" alt="" ></a>
+            </div>
+        </div>
+    </section>
+<!-- tech stack-->
+    <section>
+        <h2>Technologies</h2>
+        <div class="info" id="column">
+            <div class="info-logo" id="tech">
+                <img src="tech/texpic.png" alt="">
+            </div>
+    </div>
+    </section>
+
+<!-- education -->
+
+    <section>
+        <h2> Education </h2>
+        <div class="info">
+            <div class="info-content">
+                 <img src="school/PUPLogo.png" alt="" width="100px" height="100px">
+            </div>
+            <div class="tech-info">
+                <h3>Polytechnic University of the Philippines</h3>
+                <h4>2021- current</h4>
+                <h5>COURSE: Bachelor of Science in Information Technology</h5>
+            </div>
+            <div class="info-desc">
+                <p>First year : President's Lister <br> Second year : President's Lister </p>
+            </div>
+         </div>
+        <div class="info">
+            <div class="info-content">
+                 <img src="school/PUPLogo.png" alt="" width="100px" height="100px">
+            </div>
+            <div class="tech-info">
+                <h3>Polytechnic University of the Philippines-SHS</h3>
+                <h4>2019-2021</h4>
+                <h5>STRAND: Science, Technology, Engineering and Mathematics</h5>
+            </div>
+            <div class="info-desc">
+                <p> "During my final years in senior high school, I discovered the essence of humanity. Interacting with diverse individuals at this stage marked a 
+                    significant departure from my previous experiences. Unlike my high school years, where I consistently interacted with the same set of classmates, the inclusivity
+                     at PUP broadened my perspective. The varied backgrounds and perspectives encountered during this period have had a 
+                     profound impact on my outlook and understanding of the world."
+                </p>
+            </div>
+         </div>
+        <div class="info">
+           <div class="info-content">
+                <img src="school/JCMPHS logo.jpg" alt="" width="100px" height="100px">
+           </div>
+           <div class="tech-info">
+               <h3>Justice Cecilia Munoz Palma High School</h3>
+               <h4>2015-2019</h4>
+           </div>
+           <div class="info-desc">
+               <p> "During my high school years, I maintained a strong academic record and was part of an exclusive class, known as the star section, 
+                where we enjoyed the privilege of taking advanced classes and exclusive subjects tailored for our group. 
+                This class operates on a 'survival of the fittest' principle, and failing grades can result in removal from the class."
+               </p>
+           </div>
+        </div>
+
+        <div class="info">
+            <div class="info-content">
+                 <img src="school/Screenshot 2023-11-15 115110.png" alt="">
+            </div>
+            <div class="tech-info">
+                <h3>Payatas B. Elementary School</h3>
+                <h4>2009 - 2014</h4>
+            </div>
+            <div class="info-desc">
+                <p> 
+                "Throughout my grade school years, I consistently excelled academically, actively participating in various competitions such 
+                as Mathematics, poster making, and Sci-damath, where I competed against students from different schools."
+                </p>
+            </div>
+         </div>
+    </section>
+<!-- skills -->
+    <section>
+        <h2> Skills </h2>
+        <div class="row">
+            <div class="info-sm">
+                <div class="tech-info">
+                    <h3>• Strategic Thinking</h3>
+                </div>
+            </div>
+            <div class="info-sm">
+                <div class="tech-info">
+                    <h3>• Leadership</h3>
+                </div>
+            </div>
+            <div class="info-sm">
+                <div class="tech-info">
+                    <h3>• Designing</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="info-sm">
+                <div class="tech-info">
+                    <h3>• Problem Solving</h3>
+                </div>
+            </div>
+            <div class="info-sm">
+                <div class="tech-info">
+                    <h3>• Conceptual Planning</h3>
+                </div>
+            </div>
+            <div class="info-sm">
+                <div class="tech-info">
+                    <h3>• Time Management</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- interests -->
+
+<section>
+    <h2>Interests</h2>
+    <figure class="interest">
+        <img src="interests/gamdev.png" alt="">
+        <figcaption>Game Development</figcaption>
+    </figure>
+    <figure class="interest">
+        <img src="interests/webdev.png" alt="">
+        <figcaption>Web Development</figcaption>
+    </figure>
+    <figure class="interest">
+        <img src="interests/softwaredev.png" alt="">
+        <figcaption>Software Development</figcaption>
+    </figure>
+    <figure class="interest">
+        <img src="interests/dbdev.png" alt="">
+        <figcaption>Database Administration</figcaption>
+    </figure>
+</section>
+
+    <footer>
+        <p> <a href="https://www.facebook.com/Potchiatgrey">@ Archer Bigornia</a> 15/11/2023</p>
+        <p>For educational purposes! Curriculum Vitae assignment in web development!</p>
+    </footer>
+</body>
+</html>
