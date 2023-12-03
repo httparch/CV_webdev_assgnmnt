@@ -1,1 +1,1 @@
-# CV_webdev_assgnmnt
+# This assignment was made to assess our skills on HTML and CSS
